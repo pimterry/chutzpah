@@ -169,6 +169,8 @@
     <Content Include="JS\Test\HtmlTemplate\template-mocha.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="JS\Test\CucumberJS\basic-cucumber-test.html" />
+    <Content Include="JS\Test\CucumberJS\cucumber.js" />
     <Content Include="JS\Test\HtmlTemplate\template.tmpl.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -330,6 +332,7 @@
     <Content Include="JS\Test\chutzpah.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="JS\Test\CucumberJS\basic-cucumber-test.js" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />

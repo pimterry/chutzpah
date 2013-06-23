@@ -106,10 +106,12 @@ chutzpah.runner = function (onInitialized, onPageLoaded, isFrameworkLoaded, onFr
         var waitCondition = function () { return page.evaluate(isTestingDone); };
 
         if (status === 'success') {
-
             // Initialize startTime, this will get updated everytime we recieve 
             // content from the test framework
             startTime = new Date().getTime();
+            console.error(page.evaluate(function() {
+                return document.scripts.length;
+            }));
             trySetupTestFramework();
             page.evaluate(onPageLoaded);
             waitFor(waitCondition, timeOut);

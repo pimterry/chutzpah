@@ -203,6 +203,9 @@
     <Content Include="JSRunners\mochaRunner.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="JSRunners\cucumberRunner.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="TestFiles\Coverage\blanket_jasmine.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -217,6 +220,7 @@
     <EmbeddedResource Include="Compilers\TypeScript\typescript.js" />
     <EmbeddedResource Include="Compilers\TypeScript\compile-ts.js" />
     <EmbeddedResource Include="Compilers\TypeScript\json2.js" />
+    <Content Include="TestFiles\CucumberJS\cucumber.js" />
     <Content Include="TestFiles\Jasmine\jasmine-ddescribe-iit.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
