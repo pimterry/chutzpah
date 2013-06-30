@@ -27,7 +27,6 @@ chutzpah.runner = function (onInitialized, onPageLoaded, isFrameworkLoaded, onFr
         }
     }
 
-
     function waitFor(testIfDone, timeOutMillis) {
         var maxtimeOutMillis = timeOutMillis,
             isDone = false,
@@ -54,7 +53,6 @@ chutzpah.runner = function (onInitialized, onPageLoaded, isFrameworkLoaded, onFr
     }
 
     function writeEvent(eventObj, json) {
-
         // Everytime we get an event update the startTime. We want timeout to happen
         // when were have gone quiet for too long
         startTime = new Date().getTime();
@@ -109,9 +107,6 @@ chutzpah.runner = function (onInitialized, onPageLoaded, isFrameworkLoaded, onFr
             // Initialize startTime, this will get updated everytime we recieve 
             // content from the test framework
             startTime = new Date().getTime();
-            console.error(page.evaluate(function() {
-                return document.scripts.length;
-            }));
             trySetupTestFramework();
             page.evaluate(onPageLoaded);
             waitFor(waitCondition, timeOut);

@@ -1,7 +1,7 @@
 function basicCucumberSteps() {
     var x;
 
-    this.Given("x = $value", function(value, callback) {
+    this.Given("x is initially $value", function (value, callback) {
         x = parseFloat(value);
 
         callback();
@@ -23,7 +23,7 @@ function basicCucumberSteps() {
         callback();
     });
 
-    this.Then("x = $value", function(value, callback) {
+    this.Then(/x is (\d+)/, function (value, callback) {
         if (x != parseFloat(value)) {
             callback.fail(new Error("Expected x to equal " + value + " but was " + x));
         } else {
