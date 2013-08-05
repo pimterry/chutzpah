@@ -21,6 +21,9 @@
         public static Regex JasmineTestRegexJavaScript = new Regex(@"(?<!\.)\b(?<Tf>it)\s*\(\s*[""'](?<Test>.*)[""']", RegexOptions.Compiled);
         public static Regex JasmineTestRegexCoffeeScript = new Regex(@"^[\t ]*(?<Tf>it)[\t ]+[""'](?<Test>.*)[""']", RegexOptions.Compiled | RegexOptions.Multiline);
 
+        public static Regex CucumberJsTestRegexJavaScript = new Regex(@"(?<!\.)\b(?<Tf>this\.When)\s*\(\s*[""'](?<Test>.*)[""']", RegexOptions.Compiled);
+        public static Regex CucumberJsTestRegexCoffeeScript = new Regex(@"^[\t ]*(?<Tf>(?:@|this\.)When)[\t ]+[""'](?<Test>.*)[""']", RegexOptions.Compiled | RegexOptions.Multiline);
+
         public static Regex SchemePrefixRegex = new Regex(@"^(http|https|file)://", RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
         public static Regex InvalidPrefixedLocalFilePath = new Regex(@"^\/([a-z]:/)", RegexOptions.Compiled | RegexOptions.IgnoreCase);

@@ -462,6 +462,18 @@ namespace Chutzpah.Facts.Integration
         }
 
         [Fact]
+        public void Will_run_cucumberjs_tests_from_a_html_file()
+        {
+            var testRunner = TestRunner.Create();
+
+            TestCaseSummary result = testRunner.RunTests(@"JS\Test\CucumberJS\basic-cucumber-test.html", new ExceptionThrowingRunnerCallback());
+
+            Assert.Equal(1, result.FailedCount);
+            Assert.Equal(2, result.PassedCount);
+            Assert.Equal(3, result.TotalCount);
+        }
+
+        [Fact]
         public void Will_pass_qunit_tests_that_depend_on_fixture_from_source_test_harness()
         {
             var testRunner = TestRunner.Create();

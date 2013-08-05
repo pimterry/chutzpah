@@ -14,7 +14,7 @@ namespace Chutzpah.FrameworkDefinitions
     public abstract class BaseFrameworkDefinition : IFrameworkDefinition
     {
         private static readonly Regex FrameworkReferenceRegex =
-            new Regex(@"\<(?:script|reference|chutzpah_reference).*?(?:src|path)\s*=\s*[""'].*?(?<framework>(qunit|jasmine|mocha)).*?\.js[""']",
+            new Regex(@"\<(?:script|reference|chutzpah_reference).*?(?:src|path)\s*=\s*[""'].*?(?<framework>(qunit|jasmine|mocha|cucumber)).*?\.js[""']",
                       RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
         /// <summary>

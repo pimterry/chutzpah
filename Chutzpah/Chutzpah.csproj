@@ -106,6 +106,7 @@
     <Compile Include="FileGenerators\TypeScriptFileGenerator.cs" />
     <Compile Include="FileProcessors\IMochaReferencedFileProcessor.cs" />
     <Compile Include="FileProcessors\MochaLineNumberProcessor.cs" />
+    <Compile Include="FileProcessors\ICucumberJsReferencedFileProcessor.cs" />
     <Compile Include="FileProcessors\IJasmineReferencedFileProcessor.cs" />
     <Compile Include="FileProcessors\IQUnitReferencedFileProcessor.cs" />
     <Compile Include="FileProcessors\IReferencedFileProcessor.cs" />
@@ -119,6 +120,7 @@
     <Compile Include="FileProbe.cs" />
     <Compile Include="FrameworkDefinitions\BaseFrameworkDefinition.cs" />
     <Compile Include="FrameworkDefinitions\MochaDefinition.cs" />
+    <Compile Include="FrameworkDefinitions\CucumberJsDefinition.cs" />
     <Compile Include="FrameworkDefinitions\IFrameworkDefinition.cs" />
     <Compile Include="FrameworkDefinitions\JasmineDefinition.cs" />
     <Compile Include="FrameworkDefinitions\QUnitDefinition.cs" />
